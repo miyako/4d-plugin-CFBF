@@ -13,3 +13,28 @@ Parse CFBF ([Compound File Binary Format](https://en.wikipedia.org/wiki/Compound
 
 CFBF is the structured binary file format used by classic Microsoft applications. XLS, DOC, MSG are all CFBF files.
 
+## Syntax
+
+```
+CFBF PARSE DATA (data;json;bytes)
+```
+
+Parameter|Type|Description
+------------|------------|----
+data|BLOB|
+json|TEXT|
+bytes|ARRAY BLOB|
+
+### Examples
+
+```
+$path:=System folder(Desktop)+"sample.msg"
+
+C_BLOB($data)
+DOCUMENT TO BLOB($path;$data)
+
+C_TEXT($json)
+ARRAY BLOB($bytes;0)
+
+CFBF PARSE DATA ($data;$json;$bytes)
+```
