@@ -46,8 +46,8 @@ CFBF PARSE DATA ($data;$json;$bytes)
   ``.size``  
   ``.local_date`` (optional)  
   ``.local_time`` (optional)  
-  ``utc_date`` (optional)  
-  ``utc_time`` (optional)  
-  ``storages[]`` or ``.data``  
+  ``.utc_date`` (optional)  
+  ``.utc_time`` (optional)  
+  ``.storages[]`` or ``.data``  
   
   
