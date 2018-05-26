@@ -142,6 +142,20 @@ bool IsProcessOnExit()
 	return (!procName.compare(exitProcName));
 }
 
+#if VERSIONWIN
+
+BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
+{
+	glib_DllMain(hinstDLL, fdwReason, lpvReserved);
+	gio_DllMain(hinstDLL, fdwReason, lpvReserved);
+	gobject_DllMain(hinstDLL, fdwReason, lpvReserved);
+	gsf_DllMain(hinstDLL, fdwReason, lpvReserved);
+	
+	return TRUE;
+}
+
+#endif
+
 void OnExit()
 {
 	gsf_shutdown();
@@ -265,10 +279,9 @@ void getRoot(JSONNODE *json_element, GsfInfile *root, PA_Variable *Param3)
 					
 					json_set_text(json_child_element, L"name", name);
 					json_set_number(json_child_element, L"size", size);
-					
-					getRoot(json, node, Param3);
-					
-					json_set_object(json_child_element, L"storages", json);
+					/* recursive call */
+					getRoot(json_child_element, node, Param3);
+					json_push_back(json_child_element, json);
 					json_push_back(children, json_child_element);
 				}else
 				{
