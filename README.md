@@ -51,3 +51,10 @@ CFBF PARSE DATA ($data;$json;$bytes)
   ``.storages[]`` or ``.data``  
   
   
+The root object has one property, ``storages``, which is an array of ``storage`` objects.  
+
+A ``storage`` object is a leaf or node.  
+
+A leaf storage has ``data`` with ``size`` (but the size can be ``0``)
+
+A node storage is like a directory. It has an array of ``storage`` objects and no ``data``.  
