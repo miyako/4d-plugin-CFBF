@@ -281,7 +281,7 @@ void getRoot(JSONNODE *json_element, GsfInfile *root, PA_Variable *Param3)
 					json_set_number(json_child_element, L"size", size);
 					/* recursive call */
 					getRoot(json_child_element, node, Param3);
-					json_push_back(json_child_element, json);
+//					json_push_back(json_child_element, json);
 					json_push_back(children, json_child_element);
 				}else
 				{
