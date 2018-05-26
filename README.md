@@ -4,4 +4,9 @@ Parse CFBF ([Compound File Binary Format](https://en.wikipedia.org/wiki/Compound
 
 #### Build Notes
 
-``HAVE_BZ2`` ``HAVE_UNISTD_H`` ``HAVE_SYS_STATFS_H`` ``HAVE_MMAP``
+``HAVE_BZ2``  
+``HAVE_CHOWN``  
+``HAVE_UNISTD_H``  
+``HAVE_SYS_STATFS_H``  
+``HAVE_MMAP``  
+``HAVE_FSEEKO``  
