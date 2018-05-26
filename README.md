@@ -61,6 +61,8 @@ A leaf storage has ``data`` with ``size`` (but the size can be ``0``)
 
 A node storage is like a directory. It has an array of ``storage`` objects and no ``data``.  
 
+``data`` indicates the element number inside the BLOB array ``bytes``.
+
 #### Example of a parsed MSG file
 
 ```
