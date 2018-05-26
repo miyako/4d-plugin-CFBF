@@ -164,8 +164,7 @@ A node storage is like a directory. It has an array of ``storage`` objects and n
 					"size" : 8,
 					"data" : 18
 				}
-			],
-			"" : {}
+			]
 		},
 		{
 			"name" : "__substg1.0_001A001F",
@@ -655,8 +654,7 @@ A node storage is like a directory. It has an array of ``storage`` objects and n
 					"size" : 344,
 					"data" : 111
 				}
-			],
-			"" : {}
+			]
 		},
 		{
 			"local_time" : 63523000,
@@ -721,8 +719,7 @@ A node storage is like a directory. It has an array of ``storage`` objects and n
 					"size" : 392,
 					"data" : 122
 				}
-			],
-			"" : {}
+			]
 		}
 	]
 }
