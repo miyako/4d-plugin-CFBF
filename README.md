@@ -9,6 +9,7 @@ Parse CFBF ([Compound File Binary Format](https://en.wikipedia.org/wiki/Compound
 
 ### Releases
 
-[2.0](https://github.com/miyako/4d-plugin-growl/releases/tag/2.0)
-
 ## About
+
+CFBF is the structured binary file format used by classic Microsoft applications. XLS, DOC, MSG are all CFBF files.
+
