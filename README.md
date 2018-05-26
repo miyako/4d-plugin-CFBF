@@ -38,3 +38,16 @@ ARRAY BLOB($bytes;0)
 
 CFBF PARSE DATA ($data;$json;$bytes)
 ```
+
+#### Structure of parsed object
+
+``storages[]``  
+  ``.name``  
+  ``.size``  
+  ``.local_date`` (optional)  
+  ``.local_time`` (optional)  
+  ``utc_date`` (optional)
+  ``utc_time`` (optional)
+  ``storages[]`` or ``.data``  
+  
+  
