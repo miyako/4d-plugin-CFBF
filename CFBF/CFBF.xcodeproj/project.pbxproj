@@ -54,6 +54,9 @@
 		D134D4AC1A030BA0008D14EF /* manifest.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = D134D4A91A030B06008D14EF /* manifest.json */; };
 		D175D9CD1A02E8DD0006B569 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D175D9CC1A02E8DD0006B569 /* CoreGraphics.framework */; };
 		D1B8BD2020B7DC0E00508584 /* libjson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B8BD1F20B7DC0E00508584 /* libjson.a */; };
+		D1CE1D2720BB9606005089A3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CE1D2620BB9606005089A3 /* libz.dylib */; };
+		D1CE1D2920BB9642005089A3 /* libiconv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CE1D2820BB9642005089A3 /* libiconv.a */; };
+		D1CE1D2B20BB96AB005089A3 /* libxml2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CE1D2A20BB96AB005089A3 /* libxml2.a */; };
 		D1E699C920B5987600FBBA1A /* libgsf-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E699C820B5987600FBBA1A /* libgsf-1.a */; };
 		D1E699CC20B5988A00FBBA1A /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E699CB20B5988A00FBBA1A /* libbz2.dylib */; };
 		D1E699CE20B5989D00FBBA1A /* libglib-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E699CD20B5989D00FBBA1A /* libglib-2.0.a */; };
@@ -61,8 +64,6 @@
 		D1E699D220B598FE00FBBA1A /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E699D120B598FE00FBBA1A /* libffi.a */; };
 		D1E699D420B5990D00FBBA1A /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E699D320B5990D00FBBA1A /* libintl.a */; };
 		D1E699D620B5991800FBBA1A /* libpcre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E699D520B5991800FBBA1A /* libpcre.a */; };
-		D1E699D820B5994100FBBA1A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E699D720B5994100FBBA1A /* libz.tbd */; };
-		D1E699DA20B5994800FBBA1A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E699D920B5994800FBBA1A /* libiconv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -129,6 +130,10 @@
 		D14D10DD1A03A8A5008B3411 /* constants.xlf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = constants.xlf; sourceTree = "<group>"; };
 		D175D9CC1A02E8DD0006B569 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D1B8BD1F20B7DC0E00508584 /* libjson.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjson.a; path = a/libjson.a; sourceTree = "<group>"; };
+		D1CE1D2420BB95FC005089A3 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		D1CE1D2620BB9606005089A3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D1CE1D2820BB9642005089A3 /* libiconv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiconv.a; path = a/libiconv.a; sourceTree = "<group>"; };
+		D1CE1D2A20BB96AB005089A3 /* libxml2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxml2.a; path = a/libxml2.a; sourceTree = "<group>"; };
 		D1E699C820B5987600FBBA1A /* libgsf-1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgsf-1.a"; path = "a/libgsf-1.a"; sourceTree = "<group>"; };
 		D1E699CB20B5988A00FBBA1A /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
 		D1E699CD20B5989D00FBBA1A /* libglib-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libglib-2.0.a"; path = "a/libglib-2.0.a"; sourceTree = "<group>"; };
@@ -145,8 +150,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1E699DA20B5994800FBBA1A /* libiconv.tbd in Frameworks */,
-				D1E699D820B5994100FBBA1A /* libz.tbd in Frameworks */,
+				D1CE1D2B20BB96AB005089A3 /* libxml2.a in Frameworks */,
+				D1CE1D2920BB9642005089A3 /* libiconv.a in Frameworks */,
+				D1CE1D2720BB9606005089A3 /* libz.dylib in Frameworks */,
 				D1E699CC20B5988A00FBBA1A /* libbz2.dylib in Frameworks */,
 				D1E699D420B5990D00FBBA1A /* libintl.a in Frameworks */,
 				D1E699D220B598FE00FBBA1A /* libffi.a in Frameworks */,
@@ -154,8 +160,8 @@
 				D1E699C920B5987600FBBA1A /* libgsf-1.a in Frameworks */,
 				D1E699D620B5991800FBBA1A /* libpcre.a in Frameworks */,
 				D1E699CE20B5989D00FBBA1A /* libglib-2.0.a in Frameworks */,
-				D13116C71A03B5B600DE1322 /* AppKit.framework in Frameworks */,
 				D1B8BD2020B7DC0E00508584 /* libjson.a in Frameworks */,
+				D13116C71A03B5B600DE1322 /* AppKit.framework in Frameworks */,
 				D175D9CD1A02E8DD0006B569 /* CoreGraphics.framework in Frameworks */,
 				D130064F12F02D9700702C0E /* Cocoa.framework in Frameworks */,
 			);
@@ -311,6 +317,10 @@
 		D1E699CA20B5988A00FBBA1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1CE1D2A20BB96AB005089A3 /* libxml2.a */,
+				D1CE1D2820BB9642005089A3 /* libiconv.a */,
+				D1CE1D2620BB9606005089A3 /* libz.dylib */,
+				D1CE1D2420BB95FC005089A3 /* libiconv.dylib */,
 				D1E699D920B5994800FBBA1A /* libiconv.tbd */,
 				D1E699D720B5994100FBBA1A /* libz.tbd */,
 				D1E699CB20B5988A00FBBA1A /* libbz2.dylib */,
@@ -473,6 +483,7 @@
 		42D60B400A9DDBC8002ABB42 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -501,6 +512,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4D.CFBF;
 				PRODUCT_NAME = CFBF;
+				SDKROOT = macosx10.8;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -515,6 +527,7 @@
 		42D60B410A9DDBC8002ABB42 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -540,6 +553,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4D.CFBF;
 				PRODUCT_NAME = CFBF;
+				SDKROOT = macosx10.8;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -554,6 +568,7 @@
 		42D60B420A9DDBC8002ABB42 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -577,6 +592,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4D.CFBF;
 				PRODUCT_NAME = CFBF;
+				SDKROOT = macosx10.8;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -590,7 +606,7 @@
 		42D60B440A9DDBC8002ABB42 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -615,7 +631,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OBJROOT = "$(SRCROOT)/build";
-				SDKROOT = macosx10.11;
+				SDKROOT = macosx10.8;
 				SYMROOT = "$(SRCROOT)/$(PRODUCT_NAME).4dbase/Plugins";
 				USER_HEADER_SEARCH_PATHS = "a/include a/include/glib-2.0/**";
 			};
@@ -624,7 +640,7 @@
 		42D60B450A9DDBC8002ABB42 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -649,7 +665,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OBJROOT = "$(SRCROOT)/build";
-				SDKROOT = macosx10.11;
+				SDKROOT = macosx10.8;
 				SYMROOT = "$(SRCROOT)/$(PRODUCT_NAME).4dbase/Plugins";
 				USER_HEADER_SEARCH_PATHS = "a/include a/include/glib-2.0/**";
 			};
@@ -658,7 +674,7 @@
 		42D60B460A9DDBC8002ABB42 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -681,7 +697,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				SDKROOT = macosx10.11;
+				SDKROOT = macosx10.8;
 				SYMROOT = "$(SRCROOT)/$(PRODUCT_NAME).4dbase/Plugins";
 				USER_HEADER_SEARCH_PATHS = "a/include a/include/glib-2.0/**";
 			};
