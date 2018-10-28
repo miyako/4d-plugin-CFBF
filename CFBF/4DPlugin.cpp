@@ -130,6 +130,15 @@ void json_set_text_param(JSONNODE *n, C_TEXT &t)
 	
 }
 
+/*
+ 
+ since 17.x/17R2, static GLIB crashes on restarted with GSF
+ 
+ (process:80682): GLib-GObject-[1;33mWARNING[0m **: [34m21:08:37.848[0m: cannot register existing type 'GsfDocPropVector'
+ 
+ ** (process:80682): [1;33mWARNING[0m **: [34m21:08:37.849[0m: Failed to register objects types
+
+ */
 #pragma mark Startup / Exit
 
 bool IsProcessOnExit()
