@@ -9,6 +9,8 @@ Parse CFBF ([Compound File Binary Format](https://en.wikipedia.org/wiki/Compound
 
 ### Releases
 
+[2.0](https://github.com/miyako/4d-plugin-CFBF/releases/tag/2.0)
+
 [1.3](https://github.com/miyako/4d-plugin-CFBF/releases/tag/1.3)
 
 [1.2](https://github.com/miyako/4d-plugin-CFBF/releases/tag/1.2)
