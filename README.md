@@ -17,6 +17,12 @@ Parse CFBF ([Compound File Binary Format](https://en.wikipedia.org/wiki/Compound
 
 CFBF is the structured binary file format used by classic Microsoft applications. XLS, DOC, MSG are all CFBF files.
 
+## Updates
+
+``ligsf`` 1.14.44 (homebrew) ``glib`` 2.58.1 (homebrew)
+
+the library was crashing on 17.x (not 17.0) and 17R2 on database restart 
+
 ## Syntax
 
 ```
