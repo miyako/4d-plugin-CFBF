@@ -324,6 +324,16 @@
 			name = a;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+=======
+		D1E699CA20B5988A00FBBA1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+>>>>>>> d23fdbe3eef4b390494a5755b6e2b39c2dbef6d7
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -513,7 +523,10 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4D.CFBF;
 				PRODUCT_NAME = CFBF;
+<<<<<<< HEAD
 				PROVISIONING_PROFILE_SPECIFIER = "";
+=======
+>>>>>>> d23fdbe3eef4b390494a5755b6e2b39c2dbef6d7
 				SDKROOT = macosx10.8;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -560,7 +573,10 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4D.CFBF;
 				PRODUCT_NAME = CFBF;
+<<<<<<< HEAD
 				PROVISIONING_PROFILE_SPECIFIER = "";
+=======
+>>>>>>> d23fdbe3eef4b390494a5755b6e2b39c2dbef6d7
 				SDKROOT = macosx10.8;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -605,7 +621,10 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4D.CFBF;
 				PRODUCT_NAME = CFBF;
+<<<<<<< HEAD
 				PROVISIONING_PROFILE_SPECIFIER = "";
+=======
+>>>>>>> d23fdbe3eef4b390494a5755b6e2b39c2dbef6d7
 				SDKROOT = macosx10.8;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (

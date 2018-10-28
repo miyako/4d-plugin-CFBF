@@ -60,7 +60,11 @@
          <EnvironmentVariable
             key = "DYLD_PRINT_LIBRARIES"
             value = ""
+<<<<<<< HEAD
             isEnabled = "NO">
+=======
+            isEnabled = "YES">
+>>>>>>> d23fdbe3eef4b390494a5755b6e2b39c2dbef6d7
          </EnvironmentVariable>
       </EnvironmentVariables>
       <AdditionalOptions>
