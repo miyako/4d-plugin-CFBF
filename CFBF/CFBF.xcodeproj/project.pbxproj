@@ -51,20 +51,16 @@
 		D13116F11A03C2D400DE1322 /* C_BLOB.h in Headers */ = {isa = PBXBuildFile; fileRef = D13116EF1A03C2D400DE1322 /* C_BLOB.h */; };
 		D13116F41A03C7AF00DE1322 /* ARRAY_DATE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D13116F21A03C7AF00DE1322 /* ARRAY_DATE.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
 		D13116F51A03C7AF00DE1322 /* ARRAY_DATE.h in Headers */ = {isa = PBXBuildFile; fileRef = D13116F31A03C7AF00DE1322 /* ARRAY_DATE.h */; };
+		D13451ED2185DCD500E78BAE /* libffi.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D13451E42185DCD500E78BAE /* libffi.6.dylib */; };
+		D13451EE2185DCD500E78BAE /* libgio-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D13451E52185DCD500E78BAE /* libgio-2.0.0.dylib */; };
+		D13451EF2185DCD500E78BAE /* libglib-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D13451E62185DCD500E78BAE /* libglib-2.0.0.dylib */; };
+		D13451F02185DCD500E78BAE /* libgmodule-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D13451E72185DCD500E78BAE /* libgmodule-2.0.0.dylib */; };
+		D13451F12185DCD500E78BAE /* libgobject-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D13451E82185DCD500E78BAE /* libgobject-2.0.0.dylib */; };
+		D13451F22185DCD500E78BAE /* libgsf-1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D13451E92185DCD500E78BAE /* libgsf-1.dylib */; };
+		D13451F32185DCD500E78BAE /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D13451EA2185DCD500E78BAE /* libiconv.2.dylib */; };
+		D13451F42185DCD500E78BAE /* libintl.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D13451EB2185DCD500E78BAE /* libintl.8.dylib */; };
+		D13451F52185DCD500E78BAE /* libpcre.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D13451EC2185DCD500E78BAE /* libpcre.1.dylib */; };
 		D13451F62185DD1A00E78BAE /* libjson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B8BD1F20B7DC0E00508584 /* libjson.a */; };
-		D13451FB2185E07300E78BAE /* libgio-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D13451F72185E07300E78BAE /* libgio-2.0.a */; };
-		D13451FC2185E07300E78BAE /* libglib-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D13451F82185E07300E78BAE /* libglib-2.0.a */; };
-		D13451FD2185E07300E78BAE /* libgobject-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D13451F92185E07300E78BAE /* libgobject-2.0.a */; };
-		D13451FE2185E07300E78BAE /* libgsf-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D13451FA2185E07300E78BAE /* libgsf-1.a */; };
-		D13452012185E12400E78BAE /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D13451FF2185E08200E78BAE /* libffi.a */; };
-		D13452032185E14700E78BAE /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D13452022185E14700E78BAE /* libbz2.dylib */; };
-		D13452052185E15800E78BAE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D13452042185E15800E78BAE /* libz.dylib */; };
-		D13452062185E17000E78BAE /* libxml2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CE1D2A20BB96AB005089A3 /* libxml2.a */; };
-		D13452072185E17B00E78BAE /* liblzma.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D13451BF2185C0CB00E78BAE /* liblzma.a */; };
-		D13452102185E24D00E78BAE /* libpcre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D134520F2185E24D00E78BAE /* libpcre.a */; };
-		D13452112185E2A100E78BAE /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D13452092185E1D700E78BAE /* libintl.a */; };
-		D13452142185E3E900E78BAE /* libiconv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CE1D2820BB9642005089A3 /* libiconv.a */; };
-		D13452192185E8DB00E78BAE /* s-libiconv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D13452182185E8DB00E78BAE /* s-libiconv.a */; };
 		D134D4AC1A030BA0008D14EF /* manifest.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = D134D4A91A030B06008D14EF /* manifest.json */; };
 		D175D9CD1A02E8DD0006B569 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D175D9CC1A02E8DD0006B569 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
@@ -129,26 +125,21 @@
 		D13116EF1A03C2D400DE1322 /* C_BLOB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_BLOB.h; path = Classes/C_BLOB.h; sourceTree = "<group>"; };
 		D13116F21A03C7AF00DE1322 /* ARRAY_DATE.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ARRAY_DATE.cpp; path = Classes/ARRAY_DATE.cpp; sourceTree = "<group>"; };
 		D13116F31A03C7AF00DE1322 /* ARRAY_DATE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARRAY_DATE.h; path = Classes/ARRAY_DATE.h; sourceTree = "<group>"; };
-		D13451BF2185C0CB00E78BAE /* liblzma.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblzma.a; path = a/liblzma.a; sourceTree = "<group>"; };
-		D13451F72185E07300E78BAE /* libgio-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgio-2.0.a"; path = "a/libgio-2.0.a"; sourceTree = "<group>"; };
-		D13451F82185E07300E78BAE /* libglib-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libglib-2.0.a"; path = "a/libglib-2.0.a"; sourceTree = "<group>"; };
-		D13451F92185E07300E78BAE /* libgobject-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgobject-2.0.a"; path = "a/libgobject-2.0.a"; sourceTree = "<group>"; };
-		D13451FA2185E07300E78BAE /* libgsf-1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgsf-1.a"; path = "a/libgsf-1.a"; sourceTree = "<group>"; };
-		D13451FF2185E08200E78BAE /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = a/libffi.a; sourceTree = "<group>"; };
-		D13452022185E14700E78BAE /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libbz2.dylib; sourceTree = DEVELOPER_DIR; };
-		D13452042185E15800E78BAE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
-		D13452092185E1D700E78BAE /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libintl.a; path = a/libintl.a; sourceTree = "<group>"; };
-		D134520B2185E1E000E78BAE /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
-		D134520F2185E24D00E78BAE /* libpcre.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcre.a; path = a/libpcre.a; sourceTree = "<group>"; };
-		D13452182185E8DB00E78BAE /* s-libiconv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "s-libiconv.a"; path = "a/s-libiconv.a"; sourceTree = "<group>"; };
+		D13451E42185DCD500E78BAE /* libffi.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libffi.6.dylib; path = CFBF.4dbase/Plugins/CFBF.bundle/Contents/MacOS/libffi.6.dylib; sourceTree = "<group>"; };
+		D13451E52185DCD500E78BAE /* libgio-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgio-2.0.0.dylib"; path = "CFBF.4dbase/Plugins/CFBF.bundle/Contents/MacOS/libgio-2.0.0.dylib"; sourceTree = "<group>"; };
+		D13451E62185DCD500E78BAE /* libglib-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libglib-2.0.0.dylib"; path = "CFBF.4dbase/Plugins/CFBF.bundle/Contents/MacOS/libglib-2.0.0.dylib"; sourceTree = "<group>"; };
+		D13451E72185DCD500E78BAE /* libgmodule-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgmodule-2.0.0.dylib"; path = "CFBF.4dbase/Plugins/CFBF.bundle/Contents/MacOS/libgmodule-2.0.0.dylib"; sourceTree = "<group>"; };
+		D13451E82185DCD500E78BAE /* libgobject-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgobject-2.0.0.dylib"; path = "CFBF.4dbase/Plugins/CFBF.bundle/Contents/MacOS/libgobject-2.0.0.dylib"; sourceTree = "<group>"; };
+		D13451E92185DCD500E78BAE /* libgsf-1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgsf-1.dylib"; path = "CFBF.4dbase/Plugins/CFBF.bundle/Contents/MacOS/libgsf-1.dylib"; sourceTree = "<group>"; };
+		D13451EA2185DCD500E78BAE /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = CFBF.4dbase/Plugins/CFBF.bundle/Contents/MacOS/libiconv.2.dylib; sourceTree = "<group>"; };
+		D13451EB2185DCD500E78BAE /* libintl.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libintl.8.dylib; path = CFBF.4dbase/Plugins/CFBF.bundle/Contents/MacOS/libintl.8.dylib; sourceTree = "<group>"; };
+		D13451EC2185DCD500E78BAE /* libpcre.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcre.1.dylib; path = CFBF.4dbase/Plugins/CFBF.bundle/Contents/MacOS/libpcre.1.dylib; sourceTree = "<group>"; };
 		D134D4A91A030B06008D14EF /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		D14D10DD1A03A8A5008B3411 /* constants.xlf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = constants.xlf; sourceTree = "<group>"; };
 		D175D9CC1A02E8DD0006B569 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D1B8BD1F20B7DC0E00508584 /* libjson.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjson.a; path = a/libjson.a; sourceTree = "<group>"; };
 		D1CE1D2420BB95FC005089A3 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		D1CE1D2620BB9606005089A3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		D1CE1D2820BB9642005089A3 /* libiconv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiconv.a; path = a/libiconv.a; sourceTree = "<group>"; };
-		D1CE1D2A20BB96AB005089A3 /* libxml2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxml2.a; path = a/libxml2.a; sourceTree = "<group>"; };
 		D1E699CB20B5988A00FBBA1A /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -157,20 +148,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D13452192185E8DB00E78BAE /* s-libiconv.a in Frameworks */,
-				D13452142185E3E900E78BAE /* libiconv.a in Frameworks */,
-				D13452112185E2A100E78BAE /* libintl.a in Frameworks */,
-				D13452102185E24D00E78BAE /* libpcre.a in Frameworks */,
-				D13452072185E17B00E78BAE /* liblzma.a in Frameworks */,
-				D13452062185E17000E78BAE /* libxml2.a in Frameworks */,
-				D13452012185E12400E78BAE /* libffi.a in Frameworks */,
-				D13451FB2185E07300E78BAE /* libgio-2.0.a in Frameworks */,
-				D13451FC2185E07300E78BAE /* libglib-2.0.a in Frameworks */,
-				D13451FD2185E07300E78BAE /* libgobject-2.0.a in Frameworks */,
-				D13451FE2185E07300E78BAE /* libgsf-1.a in Frameworks */,
 				D13451F62185DD1A00E78BAE /* libjson.a in Frameworks */,
-				D13452032185E14700E78BAE /* libbz2.dylib in Frameworks */,
-				D13452052185E15800E78BAE /* libz.dylib in Frameworks */,
+				D13451ED2185DCD500E78BAE /* libffi.6.dylib in Frameworks */,
+				D13451EE2185DCD500E78BAE /* libgio-2.0.0.dylib in Frameworks */,
+				D13451EF2185DCD500E78BAE /* libglib-2.0.0.dylib in Frameworks */,
+				D13451F02185DCD500E78BAE /* libgmodule-2.0.0.dylib in Frameworks */,
+				D13451F12185DCD500E78BAE /* libgobject-2.0.0.dylib in Frameworks */,
+				D13451F22185DCD500E78BAE /* libgsf-1.dylib in Frameworks */,
+				D13451F32185DCD500E78BAE /* libiconv.2.dylib in Frameworks */,
+				D13451F42185DCD500E78BAE /* libintl.8.dylib in Frameworks */,
+				D13451F52185DCD500E78BAE /* libpcre.1.dylib in Frameworks */,
 				D13116C71A03B5B600DE1322 /* AppKit.framework in Frameworks */,
 				D175D9CD1A02E8DD0006B569 /* CoreGraphics.framework in Frameworks */,
 				D130064F12F02D9700702C0E /* Cocoa.framework in Frameworks */,
@@ -183,6 +170,7 @@
 		089C166AFE841209C02AAC07 /* CFBF */ = {
 			isa = PBXGroup;
 			children = (
+				D134521A2185EE8300E78BAE /* dylib */,
 				D1E699C720B5986900FBBA1A /* a */,
 				D108BD7A1A03D1E6001F1B90 /* Manifest */,
 				08FB77ADFE841716C02AAC07 /* Source */,
@@ -301,6 +289,25 @@
 			name = ARRAY;
 			sourceTree = "<group>";
 		};
+		D134521A2185EE8300E78BAE /* dylib */ = {
+			isa = PBXGroup;
+			children = (
+				D1CE1D2620BB9606005089A3 /* libz.dylib */,
+				D1CE1D2420BB95FC005089A3 /* libiconv.dylib */,
+				D1E699CB20B5988A00FBBA1A /* libbz2.dylib */,
+				D13451E42185DCD500E78BAE /* libffi.6.dylib */,
+				D13451E52185DCD500E78BAE /* libgio-2.0.0.dylib */,
+				D13451E62185DCD500E78BAE /* libglib-2.0.0.dylib */,
+				D13451E72185DCD500E78BAE /* libgmodule-2.0.0.dylib */,
+				D13451E82185DCD500E78BAE /* libgobject-2.0.0.dylib */,
+				D13451E92185DCD500E78BAE /* libgsf-1.dylib */,
+				D13451EA2185DCD500E78BAE /* libiconv.2.dylib */,
+				D13451EB2185DCD500E78BAE /* libintl.8.dylib */,
+				D13451EC2185DCD500E78BAE /* libpcre.1.dylib */,
+			);
+			name = dylib;
+			sourceTree = "<group>";
+		};
 		D19CC171135378140004336E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,23 +328,6 @@
 		D1E699CA20B5988A00FBBA1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D13452182185E8DB00E78BAE /* s-libiconv.a */,
-				D134520F2185E24D00E78BAE /* libpcre.a */,
-				D134520B2185E1E000E78BAE /* libiconv.dylib */,
-				D13452092185E1D700E78BAE /* libintl.a */,
-				D13452042185E15800E78BAE /* libz.dylib */,
-				D13452022185E14700E78BAE /* libbz2.dylib */,
-				D13451FF2185E08200E78BAE /* libffi.a */,
-				D13451F72185E07300E78BAE /* libgio-2.0.a */,
-				D13451F82185E07300E78BAE /* libglib-2.0.a */,
-				D13451F92185E07300E78BAE /* libgobject-2.0.a */,
-				D13451FA2185E07300E78BAE /* libgsf-1.a */,
-				D13451BF2185C0CB00E78BAE /* liblzma.a */,
-				D1CE1D2A20BB96AB005089A3 /* libxml2.a */,
-				D1CE1D2820BB9642005089A3 /* libiconv.a */,
-				D1CE1D2620BB9606005089A3 /* libz.dylib */,
-				D1CE1D2420BB95FC005089A3 /* libiconv.dylib */,
-				D1E699CB20B5988A00FBBA1A /* libbz2.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -525,13 +515,12 @@
 					"$(PROJECT_DIR)/a",
 				);
 				LIBRARY_STYLE = Bundle;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4D.CFBF;
 				PRODUCT_NAME = CFBF;
-				SDKROOT = macosx10.11;
+				SDKROOT = macosx10.8;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -571,13 +560,12 @@
 					"$(PROJECT_DIR)/a",
 				);
 				LIBRARY_STYLE = Bundle;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4D.CFBF;
 				PRODUCT_NAME = CFBF;
-				SDKROOT = macosx10.11;
+				SDKROOT = macosx10.8;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -615,13 +603,12 @@
 					"$(PROJECT_DIR)/a",
 				);
 				LIBRARY_STYLE = Bundle;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4D.CFBF;
 				PRODUCT_NAME = CFBF;
-				SDKROOT = macosx10.11;
+				SDKROOT = macosx10.8;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
