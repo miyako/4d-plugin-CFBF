@@ -23,7 +23,7 @@ CFBF is the structured binary file format used by classic Microsoft applications
 
 ``ligsf`` 1.14.44 (homebrew) ``glib`` 2.58.1 (homebrew)
 
-the library was crashing on 17.x (not 17.0) and 17R2 on database restart 
+static ``libgsf`` crashes on later 17.x (hotfixes) and 17R2 on database restart; no issues with 16R6 or 17.0 
 
 ## Syntax
 
