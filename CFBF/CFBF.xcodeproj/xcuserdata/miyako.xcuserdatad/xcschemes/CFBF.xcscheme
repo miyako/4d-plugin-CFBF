@@ -45,7 +45,7 @@
       <PathRunnable
          runnableDebuggingMode = "0"
          BundleIdentifier = "com.4d.4d"
-         FilePath = "/Applications/4D/4D v17 R2/4D.app">
+         FilePath = "/Applications/4D/4D v16 R6/4D.app">
       </PathRunnable>
       <MacroExpansion>
          <BuildableReference
@@ -56,17 +56,6 @@
             ReferencedContainer = "container:CFBF.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "DYLD_PRINT_LIBRARIES"
-            value = ""
-<<<<<<< HEAD
-            isEnabled = "NO">
-=======
-            isEnabled = "YES">
->>>>>>> d23fdbe3eef4b390494a5755b6e2b39c2dbef6d7
-         </EnvironmentVariable>
-      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
