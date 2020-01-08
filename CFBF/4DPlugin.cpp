@@ -197,10 +197,15 @@ void PluginMain(PA_long32 selector, PA_PluginParameters params)
 			case kServerInitPlugin :
 				OnStartup();
 				break;
-				
+
+            case kDeinitPlugin :
+                OnExit();
+                break;
+                /*
 			case kCloseProcess :
 				OnCloseProcess();
 				break;
+                 */
 				
 			case 1 :
 				CFBF_PARSE_DATA(params);
