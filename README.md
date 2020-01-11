@@ -1,5 +1,6 @@
 # 4d-plugin-CFBF
-Parse CFBF ([Compound File Binary Format](https://en.wikipedia.org/wiki/Compound_File_Binary_Format)) with [libgsf](https://github.com/GNOME/libgsf)
+
+Parse [Compound File Binary Format](https://en.wikipedia.org/wiki/Compound_File_Binary_Format) file using [libgsf](https://github.com/GNOME/libgsf).
 
 ### Platform
 
@@ -7,23 +8,15 @@ Parse CFBF ([Compound File Binary Format](https://en.wikipedia.org/wiki/Compound
 |:------:|:-----:|:---------:|:---------:|
 ||<img src="https://cloud.githubusercontent.com/assets/1725068/22371562/1b091f0a-e4db-11e6-8458-8653954a7cce.png" width="24" height="24" />|<img src="https://cloud.githubusercontent.com/assets/1725068/22371562/1b091f0a-e4db-11e6-8458-8653954a7cce.png" width="24" height="24" />|<img src="https://cloud.githubusercontent.com/assets/1725068/22371562/1b091f0a-e4db-11e6-8458-8653954a7cce.png" width="24" height="24" />|
 
-### Releases
-
-[2.0](https://github.com/miyako/4d-plugin-CFBF/releases/tag/2.0.d) dylib
-
-[1.3](https://github.com/miyako/4d-plugin-CFBF/releases/tag/1.3)
-
-[1.2](https://github.com/miyako/4d-plugin-CFBF/releases/tag/1.2)
+```
+spctl -a -vv -t install CFBF.bundle: accepted
+source=Notarized Developer ID
+origin=Developer ID Application: keisuke miyako (Y69CWUC25B)
+```
 
 ## About
 
 CFBF is the structured binary file format used by classic Microsoft applications. XLS, DOC, MSG are all CFBF files.
-
-## Updates
-
-``ligsf`` 1.14.44 (homebrew) ``glib`` 2.58.1 (homebrew)
-
-static ``libgsf`` crashes on later 17.x (hotfixes) and 17R2 on database restart; no issues with 16R6 or 17.0 
 
 ## Syntax
 
