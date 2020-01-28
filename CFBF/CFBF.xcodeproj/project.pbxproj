@@ -53,17 +53,18 @@
 		D13116F51A03C7AF00DE1322 /* ARRAY_DATE.h in Headers */ = {isa = PBXBuildFile; fileRef = D13116F31A03C7AF00DE1322 /* ARRAY_DATE.h */; };
 		D134D4AC1A030BA0008D14EF /* manifest.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = D134D4A91A030B06008D14EF /* manifest.json */; };
 		D175D9CD1A02E8DD0006B569 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D175D9CC1A02E8DD0006B569 /* CoreGraphics.framework */; };
+		D1937F6E23E054DE007441EA /* libpcre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1937F6D23E054DE007441EA /* libpcre.a */; };
+		D1937F7023E05592007441EA /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1937F6F23E05592007441EA /* libxml2.tbd */; };
+		D1937F7223E055C1007441EA /* liblzma.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1937F7123E055C1007441EA /* liblzma.tbd */; };
+		D1937F7423E05601007441EA /* libffi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1937F7323E05601007441EA /* libffi.tbd */; };
 		D1CCE68223C5AC5E009A79DB /* libgsf-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CCE68123C5AC5E009A79DB /* libgsf-1.a */; };
 		D1CCE68423C5ACE8009A79DB /* libglib-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CCE68323C5ACE8009A79DB /* libglib-2.0.a */; };
 		D1CCE68623C5AD00009A79DB /* libgio-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CCE68523C5AD00009A79DB /* libgio-2.0.a */; };
 		D1CCE68823C5AD0A009A79DB /* libgobject-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CCE68723C5AD0A009A79DB /* libgobject-2.0.a */; };
-		D1CCE68A23C5AD24009A79DB /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CCE68923C5AD24009A79DB /* libffi.a */; };
 		D1CCE68C23C5AD39009A79DB /* libiconv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CCE68B23C5AD39009A79DB /* libiconv.a */; };
 		D1CCE68E23C5AD4D009A79DB /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CCE68D23C5AD4D009A79DB /* libintl.a */; };
 		D1CCE69023C5AD9A009A79DB /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CCE68F23C5AD9A009A79DB /* libbz2.tbd */; };
 		D1CCE69123C5ADA6009A79DB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E699D720B5994100FBBA1A /* libz.tbd */; };
-		D1CCE69323C5ADB3009A79DB /* libxml2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CCE69223C5ADB2009A79DB /* libxml2.a */; };
-		D1CCE69523C5ADEF009A79DB /* liblzma.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CCE69423C5ADEF009A79DB /* liblzma.a */; };
 		D1D18D39235ABABA00F9F16F /* libjson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D18D38235ABABA00F9F16F /* libjson.a */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +131,11 @@
 		D134D4A91A030B06008D14EF /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		D14D10DD1A03A8A5008B3411 /* constants.xlf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = constants.xlf; sourceTree = "<group>"; };
 		D175D9CC1A02E8DD0006B569 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D1937F6D23E054DE007441EA /* libpcre.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcre.a; path = a/libpcre.a; sourceTree = "<group>"; };
+		D1937F6F23E05592007441EA /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		D1937F7123E055C1007441EA /* liblzma.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = liblzma.tbd; path = usr/lib/liblzma.tbd; sourceTree = SDKROOT; };
+		D1937F7323E05601007441EA /* libffi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libffi.tbd; path = usr/lib/libffi.tbd; sourceTree = SDKROOT; };
+		D1937F7523E05AA4007441EA /* libgthread-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgthread-2.0.a"; path = "a/libgthread-2.0.a"; sourceTree = "<group>"; };
 		D1CCE68123C5AC5E009A79DB /* libgsf-1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgsf-1.a"; path = "a/libgsf-1.a"; sourceTree = "<group>"; };
 		D1CCE68323C5ACE8009A79DB /* libglib-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libglib-2.0.a"; path = "a/libglib-2.0.a"; sourceTree = "<group>"; };
 		D1CCE68523C5AD00009A79DB /* libgio-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgio-2.0.a"; path = "a/libgio-2.0.a"; sourceTree = "<group>"; };
@@ -159,13 +165,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1CCE69523C5ADEF009A79DB /* liblzma.a in Frameworks */,
-				D1CCE69323C5ADB3009A79DB /* libxml2.a in Frameworks */,
-				D1CCE69123C5ADA6009A79DB /* libz.tbd in Frameworks */,
+				D1937F7423E05601007441EA /* libffi.tbd in Frameworks */,
+				D1937F7223E055C1007441EA /* liblzma.tbd in Frameworks */,
+				D1937F7023E05592007441EA /* libxml2.tbd in Frameworks */,
 				D1CCE69023C5AD9A009A79DB /* libbz2.tbd in Frameworks */,
+				D1CCE69123C5ADA6009A79DB /* libz.tbd in Frameworks */,
+				D1937F6E23E054DE007441EA /* libpcre.a in Frameworks */,
 				D1CCE68E23C5AD4D009A79DB /* libintl.a in Frameworks */,
 				D1CCE68C23C5AD39009A79DB /* libiconv.a in Frameworks */,
-				D1CCE68A23C5AD24009A79DB /* libffi.a in Frameworks */,
 				D1CCE68823C5AD0A009A79DB /* libgobject-2.0.a in Frameworks */,
 				D1CCE68623C5AD00009A79DB /* libgio-2.0.a in Frameworks */,
 				D1CCE68423C5ACE8009A79DB /* libglib-2.0.a in Frameworks */,
@@ -320,6 +327,11 @@
 		D1E699CA20B5988A00FBBA1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1937F7523E05AA4007441EA /* libgthread-2.0.a */,
+				D1937F7323E05601007441EA /* libffi.tbd */,
+				D1937F7123E055C1007441EA /* liblzma.tbd */,
+				D1937F6F23E05592007441EA /* libxml2.tbd */,
+				D1937F6D23E054DE007441EA /* libpcre.a */,
 				D1CCE69423C5ADEF009A79DB /* liblzma.a */,
 				D1CCE69223C5ADB2009A79DB /* libxml2.a */,
 				D1CCE68F23C5AD9A009A79DB /* libbz2.tbd */,

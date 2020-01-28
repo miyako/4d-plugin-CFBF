@@ -165,6 +165,8 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
 
 #endif
 
+#include <pthread.h>
+
 void OnExit()
 {
 	gsf_shutdown();
@@ -199,7 +201,8 @@ void PluginMain(PA_long32 selector, PA_PluginParameters params)
 				break;
 
             case kDeinitPlugin :
-                OnExit();
+                PA_RunInMainProcess((PA_RunInMainProcessProcPtr)OnExit, NULL);
+//                OnExit();
                 break;
                 /*
 			case kCloseProcess :

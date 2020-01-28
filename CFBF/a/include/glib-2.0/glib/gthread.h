@@ -1,10 +1,10 @@
 /* GLIB - Library of useful routines for C programming
  * Copyright (C) 1995-1997  Peter Mattis, Spencer Kimball and Josh MacDonald
  *
- * This library is free software; you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License as
- * published by the Free Software Foundation; either version 2 of the
- * licence, or (at your option) any later version.
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
  *
  * This library is distributed in the hope that it will be useful, but
  * WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -334,6 +334,75 @@ static inline void
 g_mutex_locker_free (GMutexLocker *locker)
 {
   g_mutex_unlock ((GMutex *) locker);
+}
+
+/**
+ * GRecMutexLocker:
+ *
+ * Opaque type. See g_rec_mutex_locker_new() for details.
+ * Since: 2.60
+ */
+typedef void GRecMutexLocker;
+
+/**
+ * g_rec_mutex_locker_new:
+ * @rec_mutex: a recursive mutex to lock
+ *
+ * Lock @rec_mutex and return a new #GRecMutexLocker. Unlock with
+ * g_rec_mutex_locker_free(). Using g_rec_mutex_unlock() on @rec_mutex
+ * while a #GRecMutexLocker exists can lead to undefined behaviour.
+ *
+ * This is intended to be used with g_autoptr().  Note that g_autoptr()
+ * is only available when using GCC or clang, so the following example
+ * will only work with those compilers:
+ * |[
+ * typedef struct
+ * {
+ *   ...
+ *   GRecMutex rec_mutex;
+ *   ...
+ * } MyObject;
+ *
+ * static void
+ * my_object_do_stuff (MyObject *self)
+ * {
+ *   g_autoptr(GRecMutexLocker) locker = g_rec_mutex_locker_new (&self->rec_mutex);
+ *
+ *   // Code with rec_mutex locked here
+ *
+ *   if (cond)
+ *     // No need to unlock
+ *     return;
+ *
+ *   // Optionally early unlock
+ *   g_clear_pointer (&locker, g_rec_mutex_locker_free);
+ *
+ *   // Code with rec_mutex unlocked here
+ * }
+ * ]|
+ *
+ * Returns: a #GRecMutexLocker
+ * Since: 2.60
+ */
+static inline GRecMutexLocker *
+g_rec_mutex_locker_new (GRecMutex *rec_mutex)
+{
+  g_rec_mutex_lock (rec_mutex);
+  return (GRecMutexLocker *) rec_mutex;
+}
+
+/**
+ * g_rec_mutex_locker_free:
+ * @locker: a GRecMutexLocker
+ *
+ * Unlock @locker's recursive mutex. See g_rec_mutex_locker_new() for details.
+ *
+ * Since: 2.60
+ */
+static inline void
+g_rec_mutex_locker_free (GRecMutexLocker *locker)
+{
+  g_rec_mutex_unlock ((GRecMutex *) locker);
 }
 
 G_END_DECLS

@@ -6,7 +6,7 @@
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
- * version 2 of the License, or (at your option) any later version.
+ * version 2.1 of the License, or (at your option) any later version.
  *
  * This library is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -411,6 +411,17 @@ typedef enum
  * @G_UNICODE_SCRIPT_NEWA:                 Newa. Since: 2.50
  * @G_UNICODE_SCRIPT_OSAGE:                Osage. Since: 2.50
  * @G_UNICODE_SCRIPT_TANGUT:               Tangut. Since: 2.50
+ * @G_UNICODE_SCRIPT_MASARAM_GONDI:        Masaram Gondi. Since: 2.54
+ * @G_UNICODE_SCRIPT_NUSHU:                Nushu. Since: 2.54
+ * @G_UNICODE_SCRIPT_SOYOMBO:              Soyombo. Since: 2.54
+ * @G_UNICODE_SCRIPT_ZANABAZAR_SQUARE:     Zanabazar Square. Since: 2.54
+ * @G_UNICODE_SCRIPT_DOGRA:                Dogra. Since: 2.58
+ * @G_UNICODE_SCRIPT_GUNJALA_GONDI:        Gunjala Gondi. Since: 2.58
+ * @G_UNICODE_SCRIPT_HANIFI_ROHINGYA:      Hanifi Rohingya. Since: 2.58
+ * @G_UNICODE_SCRIPT_MAKASAR:              Makasar. Since: 2.58
+ * @G_UNICODE_SCRIPT_MEDEFAIDRIN:          Medefaidrin. Since: 2.58
+ * @G_UNICODE_SCRIPT_OLD_SOGDIAN:          Old Sogdian. Since: 2.58
+ * @G_UNICODE_SCRIPT_SOGDIAN:              Sogdian. Since: 2.58
  *
  * The #GUnicodeScript enumeration identifies different writing
  * systems. The values correspond to the names as defined in the
@@ -581,7 +592,22 @@ typedef enum
   G_UNICODE_SCRIPT_MARCHEN,                /* Marc */
   G_UNICODE_SCRIPT_NEWA,                   /* Newa */
   G_UNICODE_SCRIPT_OSAGE,                  /* Osge */
-  G_UNICODE_SCRIPT_TANGUT                  /* Tang */
+  G_UNICODE_SCRIPT_TANGUT,                 /* Tang */
+
+  /* Unicode 10.0 additions */
+  G_UNICODE_SCRIPT_MASARAM_GONDI,          /* Gonm */
+  G_UNICODE_SCRIPT_NUSHU,                  /* Nshu */
+  G_UNICODE_SCRIPT_SOYOMBO,                /* Soyo */
+  G_UNICODE_SCRIPT_ZANABAZAR_SQUARE,       /* Zanb */
+
+  /* Unicode 11.0 additions */
+  G_UNICODE_SCRIPT_DOGRA,                  /* Dogr */
+  G_UNICODE_SCRIPT_GUNJALA_GONDI,          /* Gong */
+  G_UNICODE_SCRIPT_HANIFI_ROHINGYA,        /* Rohg */
+  G_UNICODE_SCRIPT_MAKASAR,                /* Maka */
+  G_UNICODE_SCRIPT_MEDEFAIDRIN,            /* Medf */
+  G_UNICODE_SCRIPT_OLD_SOGDIAN,            /* Sogo */
+  G_UNICODE_SCRIPT_SOGDIAN                 /* Sogd */
 } GUnicodeScript;
 
 GLIB_AVAILABLE_IN_ALL
@@ -821,6 +847,10 @@ GLIB_AVAILABLE_IN_ALL
 gboolean g_utf8_validate (const gchar  *str,
                           gssize        max_len,
                           const gchar **end);
+GLIB_AVAILABLE_IN_2_60
+gboolean g_utf8_validate_len (const gchar  *str,
+                              gsize         max_len,
+                              const gchar **end);
 
 GLIB_AVAILABLE_IN_ALL
 gchar *g_utf8_strup   (const gchar *str,

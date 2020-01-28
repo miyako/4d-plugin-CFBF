@@ -5,7 +5,7 @@
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
- * version 2 of the License, or (at your option) any later version.
+ * version 2.1 of the License, or (at your option) any later version.
  *
  * This library is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -114,6 +114,8 @@ void             g_dbus_connection_set_exit_on_close          (GDBusConnection  
                                                                gboolean            exit_on_close);
 GLIB_AVAILABLE_IN_ALL
 GDBusCapabilityFlags  g_dbus_connection_get_capabilities      (GDBusConnection    *connection);
+GLIB_AVAILABLE_IN_2_60
+GDBusConnectionFlags  g_dbus_connection_get_flags             (GDBusConnection    *connection);
 
 /* ---------------------------------------------------------------------------------------------------- */
 
@@ -604,7 +606,7 @@ void             g_dbus_connection_signal_unsubscribe         (GDBusConnection  
  *                 gboolean         incoming,
  *                 gpointer         user_data)
  * {
- *   /<!-- -->* inspect @message *<!-- -->/
+ *   // inspect @message
  *   return message;
  * }
  * ]|
@@ -637,10 +639,10 @@ void             g_dbus_connection_signal_unsubscribe         (GDBusConnection  
  *
  *   error = NULL;
  *   copy = g_dbus_message_copy (message, &error);
- *   /<!-- -->* handle @error being is set *<!-- -->/
+ *   // handle @error being set
  *   g_object_unref (message);
  *
- *   /<!-- -->* modify @copy *<!-- -->/
+ *   // modify @copy
  *
  *   return copy;
  * }

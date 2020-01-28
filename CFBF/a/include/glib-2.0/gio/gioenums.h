@@ -5,7 +5,7 @@
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
- * version 2 of the License, or (at your option) any later version.
+ * version 2.1 of the License, or (at your option) any later version.
  *
  * This library is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -572,17 +572,19 @@ typedef enum {
  * @G_ASK_PASSWORD_NEED_DOMAIN: operation requires a domain.
  * @G_ASK_PASSWORD_SAVING_SUPPORTED: operation supports saving settings.
  * @G_ASK_PASSWORD_ANONYMOUS_SUPPORTED: operation supports anonymous users.
+ * @G_ASK_PASSWORD_TCRYPT: operation takes TCRYPT parameters (Since: 2.58)
  *
  * #GAskPasswordFlags are used to request specific information from the
  * user, or to notify the user of their choices in an authentication
  * situation.
  **/
 typedef enum {
-  G_ASK_PASSWORD_NEED_PASSWORD       = (1 << 0),
-  G_ASK_PASSWORD_NEED_USERNAME       = (1 << 1),
-  G_ASK_PASSWORD_NEED_DOMAIN         = (1 << 2),
-  G_ASK_PASSWORD_SAVING_SUPPORTED    = (1 << 3),
-  G_ASK_PASSWORD_ANONYMOUS_SUPPORTED = (1 << 4)
+  G_ASK_PASSWORD_NEED_PASSWORD           = (1 << 0),
+  G_ASK_PASSWORD_NEED_USERNAME           = (1 << 1),
+  G_ASK_PASSWORD_NEED_DOMAIN             = (1 << 2),
+  G_ASK_PASSWORD_SAVING_SUPPORTED        = (1 << 3),
+  G_ASK_PASSWORD_ANONYMOUS_SUPPORTED     = (1 << 4),
+  G_ASK_PASSWORD_TCRYPT                  = (1 << 5),
 } GAskPasswordFlags;
 
 
@@ -952,6 +954,8 @@ typedef enum
  * @G_BUS_NAME_OWNER_FLAGS_ALLOW_REPLACEMENT: Allow another message bus connection to claim the name.
  * @G_BUS_NAME_OWNER_FLAGS_REPLACE: If another message bus connection owns the name and have
  * specified #G_BUS_NAME_OWNER_FLAGS_ALLOW_REPLACEMENT, then take the name from the other connection.
+ * @G_BUS_NAME_OWNER_FLAGS_DO_NOT_QUEUE: If another message bus connection owns the name, immediately
+ * return an error from g_bus_own_name() rather than entering the waiting queue for that name. (Since 2.54)
  *
  * Flags used in g_bus_own_name().
  *
@@ -961,8 +965,11 @@ typedef enum
 {
   G_BUS_NAME_OWNER_FLAGS_NONE = 0,                    /*< nick=none >*/
   G_BUS_NAME_OWNER_FLAGS_ALLOW_REPLACEMENT = (1<<0),  /*< nick=allow-replacement >*/
-  G_BUS_NAME_OWNER_FLAGS_REPLACE = (1<<1)            /*< nick=replace >*/
+  G_BUS_NAME_OWNER_FLAGS_REPLACE = (1<<1),           /*< nick=replace >*/
+  G_BUS_NAME_OWNER_FLAGS_DO_NOT_QUEUE = (1<<2)       /*< nick=do-not-queue >*/
 } GBusNameOwnerFlags;
+/* When adding new flags, their numeric values must currently match those
+ * used in the D-Bus Specification. */
 
 /**
  * GBusNameWatcherFlags:
@@ -1467,6 +1474,11 @@ typedef enum
  * @G_APPLICATION_CAN_OVERRIDE_APP_ID: Allow users to override the
  *     application ID from the command line with `--gapplication-app-id`.
  *     Since: 2.48
+ * @G_APPLICATION_ALLOW_REPLACEMENT: Allow another instance to take over
+ *     the bus name. Since: 2.60
+ * @G_APPLICATION_REPLACE: Take over from another instance. This flag is
+ *     usually set by passing `--gapplication-replace` on the commandline.
+ *     Since: 2.60
  *
  * Flags used to define the behaviour of a #GApplication.
  *
@@ -1484,7 +1496,9 @@ typedef enum
 
   G_APPLICATION_NON_UNIQUE =           (1 << 5),
 
-  G_APPLICATION_CAN_OVERRIDE_APP_ID =  (1 << 6)
+  G_APPLICATION_CAN_OVERRIDE_APP_ID =  (1 << 6),
+  G_APPLICATION_ALLOW_REPLACEMENT   =  (1 << 7),
+  G_APPLICATION_REPLACE             =  (1 << 8)
 } GApplicationFlags;
 
 /**
@@ -1502,6 +1516,9 @@ typedef enum
  * @G_TLS_ERROR_EOF: The TLS connection was closed without proper
  *   notice, which may indicate an attack. See
  *   g_tls_connection_set_require_close_notify().
+ * @G_TLS_ERROR_INAPPROPRIATE_FALLBACK: The TLS handshake failed
+ *   because the client sent the fallback SCSV, indicating a protocol
+ *   downgrade attack. Since: 2.60
  *
  * An error code used with %G_TLS_ERROR in a #GError returned from a
  * TLS-related routine.
@@ -1515,7 +1532,8 @@ typedef enum {
   G_TLS_ERROR_NOT_TLS,
   G_TLS_ERROR_HANDSHAKE,
   G_TLS_ERROR_CERTIFICATE_REQUIRED,
-  G_TLS_ERROR_EOF
+  G_TLS_ERROR_EOF,
+  G_TLS_ERROR_INAPPROPRIATE_FALLBACK
 } GTlsError;
 
 /**
@@ -1582,6 +1600,10 @@ typedef enum {
  * g_tls_connection_set_rehandshake_mode().
  *
  * Since: 2.28
+ *
+ * Deprecated: 2.60. Changing the rehandshake mode is no longer
+ *   required for compatibility. Also, rehandshaking has been removed
+ *   from the TLS protocol in TLS 1.3.
  */
 typedef enum {
   G_TLS_REHANDSHAKE_NEVER,
@@ -1685,7 +1707,7 @@ typedef enum /*< flags >*/ {
  * @G_TLS_DATABASE_LOOKUP_KEYPAIR: Restrict lookup to certificates that have
  *     a private key.
  *
- * Flags for g_tls_database_lookup_certificate_handle(),
+ * Flags for g_tls_database_lookup_certificate_for_handle(),
  * g_tls_database_lookup_certificate_issuer(),
  * and g_tls_database_lookup_certificates_issued_by().
  *
@@ -1811,12 +1833,12 @@ typedef enum /*< flags >*/ {
  *   spawned process that can be accessed with
  *   g_subprocess_get_stdout_pipe().
  * @G_SUBPROCESS_FLAGS_STDOUT_SILENCE: silence the stdout of the spawned
- *   process (ie: redirect to /dev/null).
+ *   process (ie: redirect to `/dev/null`).
  * @G_SUBPROCESS_FLAGS_STDERR_PIPE: create a pipe for the stderr of the
  *   spawned process that can be accessed with
  *   g_subprocess_get_stderr_pipe().
  * @G_SUBPROCESS_FLAGS_STDERR_SILENCE: silence the stderr of the spawned
- *   process (ie: redirect to /dev/null).
+ *   process (ie: redirect to `/dev/null`).
  * @G_SUBPROCESS_FLAGS_STDERR_MERGE: merge the stderr of the spawned
  *   process with whatever the stdout happens to be.  This is a good way
  *   of directing both streams to a common log file, for example.
@@ -1827,7 +1849,7 @@ typedef enum /*< flags >*/ {
  *
  * Flags to define the behaviour of a #GSubprocess.
  *
- * Note that the default for stdin is to redirect from /dev/null.  For
+ * Note that the default for stdin is to redirect from `/dev/null`.  For
  * stdout and stderr the default are for them to inherit the
  * corresponding descriptor from the calling process.
  *

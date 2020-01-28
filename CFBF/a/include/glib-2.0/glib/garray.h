@@ -4,7 +4,7 @@
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
- * version 2 of the License, or (at your option) any later version.
+ * version 2.1 of the License, or (at your option) any later version.
  *
  * This library is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -154,6 +154,12 @@ gpointer   g_ptr_array_remove_index       (GPtrArray        *array,
 GLIB_AVAILABLE_IN_ALL
 gpointer   g_ptr_array_remove_index_fast  (GPtrArray        *array,
 					   guint             index_);
+GLIB_AVAILABLE_IN_2_58
+gpointer   g_ptr_array_steal_index        (GPtrArray        *array,
+                                           guint             index_);
+GLIB_AVAILABLE_IN_2_58
+gpointer   g_ptr_array_steal_index_fast   (GPtrArray        *array,
+                                           guint             index_);
 GLIB_AVAILABLE_IN_ALL
 gboolean   g_ptr_array_remove             (GPtrArray        *array,
 					   gpointer          data);

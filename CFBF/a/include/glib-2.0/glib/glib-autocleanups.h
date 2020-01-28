@@ -4,7 +4,7 @@
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
- * version 2 of the licence, or (at your option) any later version.
+ * version 2.1 of the License, or (at your option) any later version.
  *
  * This library is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -75,6 +75,7 @@ G_DEFINE_AUTOPTR_CLEANUP_FUNC(GStringChunk, g_string_chunk_free)
 G_DEFINE_AUTOPTR_CLEANUP_FUNC(GThread, g_thread_unref)
 G_DEFINE_AUTO_CLEANUP_CLEAR_FUNC(GMutex, g_mutex_clear)
 G_DEFINE_AUTOPTR_CLEANUP_FUNC(GMutexLocker, g_mutex_locker_free)
+G_DEFINE_AUTOPTR_CLEANUP_FUNC(GRecMutexLocker, g_rec_mutex_locker_free)
 G_DEFINE_AUTO_CLEANUP_CLEAR_FUNC(GCond, g_cond_clear)
 G_DEFINE_AUTOPTR_CLEANUP_FUNC(GTimer, g_timer_destroy)
 G_DEFINE_AUTOPTR_CLEANUP_FUNC(GTimeZone, g_time_zone_unref)
@@ -87,3 +88,4 @@ G_DEFINE_AUTOPTR_CLEANUP_FUNC(GVariantDict, g_variant_dict_unref)
 G_DEFINE_AUTO_CLEANUP_CLEAR_FUNC(GVariantDict, g_variant_dict_clear)
 G_DEFINE_AUTOPTR_CLEANUP_FUNC(GVariantType, g_variant_type_free)
 G_DEFINE_AUTO_CLEANUP_FREE_FUNC(GStrv, g_strfreev, NULL)
+G_DEFINE_AUTOPTR_CLEANUP_FUNC (GRefString, g_ref_string_release)
