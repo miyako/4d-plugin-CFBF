@@ -130,15 +130,6 @@ void json_set_text_param(JSONNODE *n, C_TEXT &t)
 	
 }
 
-/*
- 
- since 17.x/17R2, static GLIB crashes on restarted with GSF
- 
- (process:80682): GLib-GObject-[1;33mWARNING[0m **: [34m21:08:37.848[0m: cannot register existing type 'GsfDocPropVector'
- 
- ** (process:80682): [1;33mWARNING[0m **: [34m21:08:37.849[0m: Failed to register objects types
-
- */
 #pragma mark Startup / Exit
 
 bool IsProcessOnExit()
@@ -172,14 +163,6 @@ void OnExit()
 	gsf_shutdown();
 }
 
-void OnCloseProcess()
-{
-	if(IsProcessOnExit())
-	{
-		OnExit();
-	}
-}
-
 void OnStartup()
 {
 	gsf_init();
@@ -201,14 +184,9 @@ void PluginMain(PA_long32 selector, PA_PluginParameters params)
 				break;
 
             case kDeinitPlugin :
-                PA_RunInMainProcess((PA_RunInMainProcessProcPtr)OnExit, NULL);
-//                OnExit();
+                OnExit();
                 break;
-                /*
-			case kCloseProcess :
-				OnCloseProcess();
-				break;
-                 */
+
 				
 			case 1 :
 				CFBF_PARSE_DATA(params);
