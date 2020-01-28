@@ -4,114 +4,103 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Resources/Documentation/images/Field_0.png</key>
-		<data>
-		tiDJoel4B9Su5Vc6F5vwnss1hxA=
-		</data>
-		<key>Resources/Documentation/images/Field_1.png</key>
-		<data>
-		Xdham7YBdO9hHz9pu3JwI3RxzwA=
-		</data>
-		<key>Resources/Documentation/images/Field_10.png</key>
-		<data>
-		LjhDWK6ZACt2A2dwNz3OGcdRm+E=
-		</data>
-		<key>Resources/Documentation/images/Field_11.png</key>
-		<data>
-		BsQsfCQL7g79/hNSV/3jj2qjaY0=
-		</data>
-		<key>Resources/Documentation/images/Field_12.png</key>
-		<data>
-		7nj/vKfKe01w+5woEL6pRcUYBpA=
-		</data>
-		<key>Resources/Documentation/images/Field_13.png</key>
-		<data>
-		pvda6iJvKs8/nhpF0grnjsL72iE=
-		</data>
-		<key>Resources/Documentation/images/Field_2.png</key>
-		<data>
-		uqCQJfWQl6LHH7yJfK08g098syU=
-		</data>
-		<key>Resources/Documentation/images/Field_22.png</key>
-		<data>
-		uqCQJfWQl6LHH7yJfK08g098syU=
-		</data>
-		<key>Resources/Documentation/images/Field_23.png</key>
-		<data>
-		EPoeutAMyJUs5fTlv3VLBJE0Kms=
-		</data>
-		<key>Resources/Documentation/images/Field_24.png</key>
-		<data>
-		LhS49O/YINS4pVd2ddVJtLsM1mI=
-		</data>
-		<key>Resources/Documentation/images/Field_25.png</key>
-		<data>
-		2yt8aw96M2XVx+eR0GtlFxJQLoI=
-		</data>
-		<key>Resources/Documentation/images/Field_27.png</key>
-		<data>
-		GsutoOCbHzyqxv2YpOxYTYxdHow=
-		</data>
-		<key>Resources/Documentation/images/Field_29.png</key>
-		<data>
-		KSUNPiBpUFAlwCWvxW5M50znbQI=
-		</data>
-		<key>Resources/Documentation/images/Field_3.png</key>
-		<data>
-		EPoeutAMyJUs5fTlv3VLBJE0Kms=
-		</data>
-		<key>Resources/Documentation/images/Field_32.png</key>
-		<data>
-		7nj/vKfKe01w+5woEL6pRcUYBpA=
-		</data>
-		<key>Resources/Documentation/images/Field_4.png</key>
-		<data>
-		LhS49O/YINS4pVd2ddVJtLsM1mI=
-		</data>
-		<key>Resources/Documentation/images/Field_5.png</key>
-		<data>
-		2yt8aw96M2XVx+eR0GtlFxJQLoI=
-		</data>
-		<key>Resources/Documentation/images/Field_6.png</key>
-		<data>
-		ETvgikqdg49Jmk/16DOVlKPgHeg=
-		</data>
-		<key>Resources/Documentation/images/Field_7.png</key>
-		<data>
-		GsutoOCbHzyqxv2YpOxYTYxdHow=
-		</data>
-		<key>Resources/Documentation/images/Field_8.png</key>
-		<data>
-		6zTgta0+sL00+ZtchNPghmJlQxU=
-		</data>
-		<key>Resources/Documentation/images/Field_9.png</key>
-		<data>
-		KSUNPiBpUFAlwCWvxW5M50znbQI=
-		</data>
-		<key>Resources/Documentation/index.html</key>
-		<data>
-		RMWq6616NGiKk5LqOHI+7AV1br8=
-		</data>
-		<key>Resources/Documentation/styles/common.css</key>
-		<data>
-		q2MkLIqbO3Pku+N1cvLwp03xKCQ=
-		</data>
-		<key>Resources/English.lproj/InfoPlist.strings</key>
+		<key>Resources/en.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1ah8f1ckaejD55ZUwJ6gGGeQR1o=
+			OQQ7srSii/5zRdk9c12TLvwdFbQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/constants.xlf</key>
+		<key>Resources/manifest.json</key>
 		<data>
-		UbZYnK1QdI2HA5cO0/aNT2a+ucQ=
+		QEYhwFEtibYo5+anlXQaqDo7uoE=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>MacOS/libffi.6.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			1Ydfs0nNApzCmOb7C0ooJvz7/SM=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libffi.6" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libgio-2.0.0.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			AxSsUdnLRMtjwNbJCTbGyZjitn4=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libgio-2" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libglib-2.0.0.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			zDk10h8agVB6GDjLG0ZT+PXnn8M=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libglib-2" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libgmodule-2.0.0.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			JDOv7Zza8ECyoAu23WhJkaHcCcU=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libgmodule-2" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libgobject-2.0.0.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			MsUuWTDcWmslI3zdmILLbBUlLFc=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libgobject-2" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libgsf-1.114.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			ulnIRudUnYEpfvKH4fZRPfoKHWM=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libgsf-1" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libintl.8.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			avbvcLbWJpU8DEwz+cH0lEmrsjM=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libintl.8" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libpcre.1.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			7x4d8DP28nsc7ZFkbhRXUPLCJco=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libpcre.1" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libxml2.2.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			cw0GPi177f1wXJ6xz5scdiMVlNk=
+			</data>
+			<key>requirement</key>
+			<string>identifier libxml2 and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
 		<key>QuickLook/Thumbnail.png</key>
 		<dict>
 			<key>hash</key>
@@ -123,281 +112,28 @@
 			98jKbUnZvoNXKS37m5JUoBfuRCxC2JzhKP+uHKV6WFc=
 			</data>
 		</dict>
-		<key>Resources/Documentation/images/Field_0.png</key>
+		<key>Resources/en.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tiDJoel4B9Su5Vc6F5vwnss1hxA=
+			OQQ7srSii/5zRdk9c12TLvwdFbQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			9vmEtgmmyGxRDYp2yfSg83yXqFC3Vb94MZzv8eHOKW4=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_1.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Xdham7YBdO9hHz9pu3JwI3RxzwA=
-			</data>
-			<key>hash2</key>
-			<data>
-			TrpzHgo9oH+Dvp8sFNJ41e99Dbacr0g98j8bPNPYXEA=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_10.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LjhDWK6ZACt2A2dwNz3OGcdRm+E=
-			</data>
-			<key>hash2</key>
-			<data>
-			/U/DyOkvYzpGpYhDNFqoFbaGTy++/3AEHoXEj45nSXw=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_11.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BsQsfCQL7g79/hNSV/3jj2qjaY0=
-			</data>
-			<key>hash2</key>
-			<data>
-			E724wFugux7v75OmnU3bGRO9pJUnaoziooTqnBuV97A=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_12.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7nj/vKfKe01w+5woEL6pRcUYBpA=
-			</data>
-			<key>hash2</key>
-			<data>
-			KVB9AtEP5sBt+fCXX9qh/rd3ZlcHO/Oa3Xoqu0jbeHQ=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_13.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pvda6iJvKs8/nhpF0grnjsL72iE=
-			</data>
-			<key>hash2</key>
-			<data>
-			+CZ+t08NJvU7i6wg32Dx2JYOhLPHNXe+Uu8IBsZH08Y=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_2.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uqCQJfWQl6LHH7yJfK08g098syU=
-			</data>
-			<key>hash2</key>
-			<data>
-			skXN3JxkZamLCu0bZ/kGsrp3B3hk3PKEWTMDXKtEaPM=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_22.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uqCQJfWQl6LHH7yJfK08g098syU=
-			</data>
-			<key>hash2</key>
-			<data>
-			skXN3JxkZamLCu0bZ/kGsrp3B3hk3PKEWTMDXKtEaPM=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_23.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EPoeutAMyJUs5fTlv3VLBJE0Kms=
-			</data>
-			<key>hash2</key>
-			<data>
-			2ld5c+3wNHdVnghc5ljivRo17LU+mtZJWepbdZoTcsU=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_24.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LhS49O/YINS4pVd2ddVJtLsM1mI=
-			</data>
-			<key>hash2</key>
-			<data>
-			Q+huqo1QhzGgfhferrSVajYsRwrDT/IZjU22Qc73pTA=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_25.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2yt8aw96M2XVx+eR0GtlFxJQLoI=
-			</data>
-			<key>hash2</key>
-			<data>
-			1OMbaC2wVHUUU30gXx3U7piJsw8aK8KK+F6KOqbTqpA=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_27.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GsutoOCbHzyqxv2YpOxYTYxdHow=
-			</data>
-			<key>hash2</key>
-			<data>
-			UKomJLZx3XUsaJXRQFWbJPG0cU2E1tzLwT/68a16lNg=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_29.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KSUNPiBpUFAlwCWvxW5M50znbQI=
-			</data>
-			<key>hash2</key>
-			<data>
-			vBqYAiuMveNMMmjpJUGwJHiVrvBGg9aGFSwFmmJdM2k=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_3.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EPoeutAMyJUs5fTlv3VLBJE0Kms=
-			</data>
-			<key>hash2</key>
-			<data>
-			2ld5c+3wNHdVnghc5ljivRo17LU+mtZJWepbdZoTcsU=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_32.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7nj/vKfKe01w+5woEL6pRcUYBpA=
-			</data>
-			<key>hash2</key>
-			<data>
-			KVB9AtEP5sBt+fCXX9qh/rd3ZlcHO/Oa3Xoqu0jbeHQ=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_4.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LhS49O/YINS4pVd2ddVJtLsM1mI=
-			</data>
-			<key>hash2</key>
-			<data>
-			Q+huqo1QhzGgfhferrSVajYsRwrDT/IZjU22Qc73pTA=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_5.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2yt8aw96M2XVx+eR0GtlFxJQLoI=
-			</data>
-			<key>hash2</key>
-			<data>
-			1OMbaC2wVHUUU30gXx3U7piJsw8aK8KK+F6KOqbTqpA=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_6.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ETvgikqdg49Jmk/16DOVlKPgHeg=
-			</data>
-			<key>hash2</key>
-			<data>
-			RxXse1vQJSnMR3dtYS1xLVx8DJGhNdVftEQmPAAOmJk=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_7.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GsutoOCbHzyqxv2YpOxYTYxdHow=
-			</data>
-			<key>hash2</key>
-			<data>
-			UKomJLZx3XUsaJXRQFWbJPG0cU2E1tzLwT/68a16lNg=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_8.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6zTgta0+sL00+ZtchNPghmJlQxU=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZpL3Z/DV8nCDAu/2LuVq6vZHobBPSmML1XJeM8jvYLw=
-			</data>
-		</dict>
-		<key>Resources/Documentation/images/Field_9.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KSUNPiBpUFAlwCWvxW5M50znbQI=
-			</data>
-			<key>hash2</key>
-			<data>
-			vBqYAiuMveNMMmjpJUGwJHiVrvBGg9aGFSwFmmJdM2k=
-			</data>
-		</dict>
-		<key>Resources/Documentation/index.html</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			RMWq6616NGiKk5LqOHI+7AV1br8=
-			</data>
-			<key>hash2</key>
-			<data>
-			F9FeBSGxNINwna8qghrHC9dj57IiBI8ULWBUmgrm9wI=
-			</data>
-		</dict>
-		<key>Resources/Documentation/styles/common.css</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			q2MkLIqbO3Pku+N1cvLwp03xKCQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			rIVNwBjwCMNfpfCWIZchUp2lc4pKKGBI+/i7Oos1o7Q=
-			</data>
-		</dict>
-		<key>Resources/English.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1ah8f1ckaejD55ZUwJ6gGGeQR1o=
-			</data>
-			<key>hash2</key>
-			<data>
-			KVm8LUjXy+ZGHlT4oiDPFIhEDOqFKFU7YLYK2flpvY8=
+			++3ALBcCk6OEz1yEIm2kirQf4kjvm7EBZrqEtn9Q+Wc=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/constants.xlf</key>
+		<key>Resources/manifest.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UbZYnK1QdI2HA5cO0/aNT2a+ucQ=
+			QEYhwFEtibYo5+anlXQaqDo7uoE=
 			</data>
 			<key>hash2</key>
 			<data>
-			7t2nF9u/4W05GOd8UQ7QAt/PFge16k3ydWYX/6ElmJk=
+			gZ9FCltnrNSlnCLY9IS7plr7dHqiWyL6TL7Q8w3Om50=
 			</data>
 		</dict>
 		<key>Windows/CFBF.4DX</key>
@@ -421,15 +157,6 @@
 			<data>
 			aYANbreWyapnScWtwJiPNJUFIJq9HG7tghD2WbyGRTE=
 			</data>
-		</dict>
-		<key>manifest.json</key>
-		<dict>
-			<key>cdhash</key>
-			<data>
-			KZ2A0QsRGbsU2KjytbYndyEfCdU=
-			</data>
-			<key>requirement</key>
-			<string>identifier manifest and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
 		</dict>
 	</dict>
 	<key>rules</key>
