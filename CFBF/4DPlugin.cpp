@@ -12,6 +12,8 @@
 #include "4DPluginAPI.h"
 #include "4DPlugin.h"
 
+#define gdf_already_registed gsf_input_get_type()
+
 void json_wconv(const char *value, std::wstring &u32)
 {
 	if(value)
@@ -130,15 +132,6 @@ void json_set_text_param(JSONNODE *n, C_TEXT &t)
 	
 }
 
-/*
- 
- since 17.x/17R2, static GLIB crashes on restarted with GSF
- 
- (process:80682): GLib-GObject-[1;33mWARNING[0m **: [34m21:08:37.848[0m: cannot register existing type 'GsfDocPropVector'
- 
- ** (process:80682): [1;33mWARNING[0m **: [34m21:08:37.849[0m: Failed to register objects types
-
- */
 #pragma mark Startup / Exit
 
 bool IsProcessOnExit()
@@ -167,20 +160,20 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
 
 void OnExit()
 {
-	gsf_shutdown();
-}
-
-void OnCloseProcess()
-{
-	if(IsProcessOnExit())
-	{
-		OnExit();
-	}
+    if(gdf_already_registed) {
+        gsf_shutdown();
+    }
 }
 
 void OnStartup()
 {
-	gsf_init();
+    
+    if(gdf_already_registed){
+        
+        gsf_init();
+        
+    }
+    
 }
 
 #pragma mark -
@@ -201,11 +194,6 @@ void PluginMain(PA_long32 selector, PA_PluginParameters params)
             case kDeinitPlugin :
                 OnExit();
                 break;
-                /*
-			case kCloseProcess :
-				OnCloseProcess();
-				break;
-                 */
 				
 			case 1 :
 				CFBF_PARSE_DATA(params);
@@ -329,29 +317,39 @@ void CFBF_PARSE_DATA(PA_PluginParameters params)
 	if(h)
 	{
 		JSONNODE *json = json_new(JSON_NODE);
-		
-		GsfInput *input = gsf_input_memory_new((const guint8 *)PA_LockHandle(h),
-																					 PA_GetHandleSize(h), false);
+    
+        if(gdf_already_registed) {
+          
+            GsfInput *input = gsf_input_memory_new((const guint8 *)PA_LockHandle(h),
+                                                   PA_GetHandleSize(h), false);
 
-		if(input)
-		{
-			input = gsf_input_uncompress(input);
-		
-			GError *err = NULL;
-			GsfInfile *root = gsf_infile_msole_new(input, &err);
-			
-			if(!root)
-			{
-				json_set_text(json, L"error", (char *)err->message);
-			}else
-			{
-				getRoot(json, root, &Param3);
-				
-				g_object_unref(root);
-			}
-			g_object_unref(input);
-		}
-		
+            GType type = g_type_from_name("GsfInput");
+            
+            if(input)
+            {
+                input = gsf_input_uncompress(input);
+            
+                GError *err = NULL;
+                GsfInfile *root = gsf_infile_msole_new(input, &err);
+                
+                if(!root)
+                {
+                    json_set_text(json, L"error", (char *)err->message);
+                }else
+                {
+                    getRoot(json, root, &Param3);
+                    
+                    g_object_unref(root);
+                }
+                g_object_unref(input);
+            }
+            
+        }else{
+            
+            /* plugin was reloaded; g_type_register_static does not work this way */
+            
+        }
+
 		json_set_text_param(json, Param2);
 		
 		PA_UnlockHandle(h);

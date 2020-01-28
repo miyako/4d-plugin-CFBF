@@ -8,15 +8,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OQQ7srSii/5zRdk9c12TLvwdFbQ=
+			tKVYN2+huA23TwddfVrOZJJsrHA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/manifest.json</key>
-		<data>
-		QEYhwFEtibYo5+anlXQaqDo7uoE=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -69,7 +65,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			ulnIRudUnYEpfvKH4fZRPfoKHWM=
+			DvTUeSnmaV2w84TheW/353MuVOs=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libgsf-1" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
@@ -116,25 +112,14 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OQQ7srSii/5zRdk9c12TLvwdFbQ=
+			tKVYN2+huA23TwddfVrOZJJsrHA=
 			</data>
 			<key>hash2</key>
 			<data>
-			++3ALBcCk6OEz1yEIm2kirQf4kjvm7EBZrqEtn9Q+Wc=
+			7JedxEOlZLLrz53PQft81zgnJJ1prqz7gLBPawPF4zk=
 			</data>
 			<key>optional</key>
 			<true/>
-		</dict>
-		<key>Resources/manifest.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QEYhwFEtibYo5+anlXQaqDo7uoE=
-			</data>
-			<key>hash2</key>
-			<data>
-			gZ9FCltnrNSlnCLY9IS7plr7dHqiWyL6TL7Q8w3Om50=
-			</data>
 		</dict>
 		<key>Windows/CFBF.4DX</key>
 		<dict>
@@ -157,6 +142,15 @@
 			<data>
 			aYANbreWyapnScWtwJiPNJUFIJq9HG7tghD2WbyGRTE=
 			</data>
+		</dict>
+		<key>manifest.json</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			KZ2A0QsRGbsU2KjytbYndyEfCdU=
+			</data>
+			<key>requirement</key>
+			<string>identifier manifest and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
 		</dict>
 	</dict>
 	<key>rules</key>
