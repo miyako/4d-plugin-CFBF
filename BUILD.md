@@ -36,3 +36,15 @@ configure: error: No thread implementation found.
 So it seems not possible to compile ``glib`` without ``pthread``.
 
 ---
+
+GLIB flags
+
+```
+export LDFLAGS=-L/{local_dir}/lib
+export CPPFLAGS=-I/{local_dir}/include
+export PATH=${PATH}:$(brew --prefix gettext)/bin
+export LIBFFI_CFLAGS=-I/{local_dir}/include
+export LIBFFI_LIBS=-L/{local_dir}/lib
+
+--disable-mem-pools --enable-static --enable-gc-friendly --disable-Bsymbolic --disable-znodelete
+```
