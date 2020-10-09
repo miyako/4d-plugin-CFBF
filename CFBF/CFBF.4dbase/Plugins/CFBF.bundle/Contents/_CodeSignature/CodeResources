@@ -116,6 +116,87 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>MacOS/libffi.6.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			1Ydfs0nNApzCmOb7C0ooJvz7/SM=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libffi.6" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libgio-2.0.0.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			AxSsUdnLRMtjwNbJCTbGyZjitn4=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libgio-2" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libglib-2.0.0.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			zDk10h8agVB6GDjLG0ZT+PXnn8M=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libglib-2" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libgmodule-2.0.0.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			JDOv7Zza8ECyoAu23WhJkaHcCcU=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libgmodule-2" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libgobject-2.0.0.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			MsUuWTDcWmslI3zdmILLbBUlLFc=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libgobject-2" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libgsf-1.114.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			DvTUeSnmaV2w84TheW/353MuVOs=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libgsf-1" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libintl.8.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			avbvcLbWJpU8DEwz+cH0lEmrsjM=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libintl.8" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libpcre.1.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			7x4d8DP28nsc7ZFkbhRXUPLCJco=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libpcre.1" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libxml2.2.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			cw0GPi177f1wXJ6xz5scdiMVlNk=
+			</data>
+			<key>requirement</key>
+			<string>identifier libxml2 and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
 		<key>QuickLook/Thumbnail.png</key>
 		<dict>
 			<key>hash2</key>
