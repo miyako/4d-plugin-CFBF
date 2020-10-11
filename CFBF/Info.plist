@@ -12,10 +12,10 @@
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3.4.d.v18</string>
 	<key>CFBundleSignature</key>
 	<string>4D06</string>
-	<key>CFBundleVersion</key>
-	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>CSResourcesFileMapped</key>
 	<true/>
 </dict>
