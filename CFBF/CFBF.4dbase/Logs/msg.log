@@ -1,0 +1,65 @@
+[
+{
+	"error": 15,
+	"errorLine": 18,
+	"errorMethod": "Get_addrs",
+	"errorFormula": "If ($eml.message[$attr].length>0)",
+	"stack": [
+		{
+			"code": 15,
+			"component": "4DRT",
+			"message": "この操作は２つの引数に対して一致していません。"
+		}
+	],
+	"callChain": [
+		{
+			"type": "projectMethod",
+			"name": "m_getLastError",
+			"line": 7,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "m_handler",
+			"line": 3,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "Get_addrs",
+			"line": 18,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "MSG_PARSE",
+			"line": 485,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "TEST_v_1",
+			"line": 13,
+			"database": "CFBF"
+		}
+	],
+	"timestamp": "2021-07-14T12:06:54.854Z",
+	"process": {
+		"name": "P_13",
+		"number": 5,
+		"ID": 22,
+		"visible": true,
+		"systemID": "123145377533952",
+		"type": 3,
+		"state": 0,
+		"cpuUsage": 0.035,
+		"cpuTime": 0.142664,
+		"preemptive": false,
+		"sessionID": ""
+	},
+	"user": {
+		"account": "Designer",
+		"alias": ""
+	}
+}
+]

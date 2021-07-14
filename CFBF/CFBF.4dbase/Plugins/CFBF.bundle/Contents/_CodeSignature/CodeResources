@@ -8,7 +8,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U7w26nf1lm69k64M3qk9mCK+l1Y=
+			rfUeWSGhh1e420hWyuCKalWaFKw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -24,7 +24,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			cg75wko+JAiAjW2RGOE5U+Uc90I=
+			HJBCaK0t8p9sCAEQf2IUtHSdMDM=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libffi.7" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
@@ -33,7 +33,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			FuUyvEbKZH8LOp+wUc7f6HvNWc8=
+			/zwHeLG4re3HetAMP6tnx2dyn6Y=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libgio-2" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
@@ -42,7 +42,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			5OPp/gbVXJ3WG3s4x/bV1VTjKiY=
+			cxEd3NROkqAbzO8UFsG+AaBiH+k=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libglib-2" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			CmOHUrCaFjrzYuADXCIWIbp2I5w=
+			TbzHZnjO33s6pLf5DowLJQgmY6Q=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libgmodule-2" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
@@ -60,7 +60,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			YLGon2mHh/KJKibIacfbkXj69js=
+			0Zvr/Ts6JSkjbN5/IxD0Tf+svaI=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libgobject-2" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
@@ -69,7 +69,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			dGcsqWsEfzpuX2DZKt0RYCKAcyg=
+			DvTUeSnmaV2w84TheW/353MuVOs=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libgsf-1" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			38tfjhPEsBIVLBpkG+NcakcVkr0=
+			avbvcLbWJpU8DEwz+cH0lEmrsjM=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libintl.8" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
@@ -87,7 +87,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			spbSJWZlRIzg7gJ8I8WOD5MXwFY=
+			7x4d8DP28nsc7ZFkbhRXUPLCJco=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libpcre.1" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
@@ -96,7 +96,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			h5UbbQQcZaH62AGs9+MzV4pj2/4=
+			cw0GPi177f1wXJ6xz5scdiMVlNk=
 			</data>
 			<key>requirement</key>
 			<string>identifier libxml2 and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
@@ -116,11 +116,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U7w26nf1lm69k64M3qk9mCK+l1Y=
+			rfUeWSGhh1e420hWyuCKalWaFKw=
 			</data>
 			<key>hash2</key>
 			<data>
-			M6Wt3rFtzspjkXHyyCiiZfbwXJRiJlg0x4tZdOpCWY4=
+			O4EPdjzoAr2TNwDRU9xWOAFKHKMu5KvFdid7VsqmScY=
 			</data>
 			<key>optional</key>
 			<true/>

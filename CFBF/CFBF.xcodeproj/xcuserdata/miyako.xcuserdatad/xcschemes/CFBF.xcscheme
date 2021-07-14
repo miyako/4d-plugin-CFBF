@@ -29,8 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Deployment"
@@ -45,7 +43,7 @@
       <PathRunnable
          runnableDebuggingMode = "0"
          BundleIdentifier = "com.4d.4d"
-         FilePath = "/Applications/4D v18.2/4D.app">
+         FilePath = "/Applications/4D v18.5/4D.app">
       </PathRunnable>
       <MacroExpansion>
          <BuildableReference
@@ -63,8 +61,6 @@
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Deployment"

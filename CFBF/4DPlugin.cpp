@@ -192,6 +192,7 @@ void PluginMain(PA_long32 selector, PA_PluginParameters params)
 				break;
 
             case kDeinitPlugin :
+            case kServerDeinitPlugin:
                 OnExit();
                 break;
 				
@@ -268,7 +269,7 @@ void getRoot(JSONNODE *json_element, GsfInfile *root, PA_Variable *Param3)
 				int countNodeChildren = gsf_infile_num_children(node);
 				if(-1 != countNodeChildren)
 				{
-					JSONNODE *json = json_new(JSON_NODE);
+//					JSONNODE *json = json_new(JSON_NODE);
 					
 					char *name = (char *)gsf_input_name(child);
 					
@@ -283,7 +284,6 @@ void getRoot(JSONNODE *json_element, GsfInfile *root, PA_Variable *Param3)
 					json_set_number(json_child_element, L"size", size);
 					/* recursive call */
 					getRoot(json_child_element, node, Param3);
-//					json_push_back(json_child_element, json);
 					json_push_back(children, json_child_element);
 				}else
 				{
