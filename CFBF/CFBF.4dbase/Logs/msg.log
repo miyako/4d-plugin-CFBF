@@ -62,4 +62,382 @@
 		"alias": ""
 	}
 }
+,
+{
+	"error": -9949,
+	"errorLine": 17,
+	"errorMethod": "MSG_PARSE",
+	"errorFormula": "CFBF PARSE DATA ($1->;$json;$bytes)",
+	"stack": [
+		{
+			"code": -1,
+			"component": "4DRT",
+			"message": "プラグインメソッドが実行できません。"
+		},
+		{
+			"code": -9949,
+			"component": "4DRT",
+			"message": "ライセンスまたはアクセス権エラー。 (CFBF (3.5.0))"
+		}
+	],
+	"callChain": [
+		{
+			"type": "projectMethod",
+			"name": "m_getLastError",
+			"line": 7,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "m_handler",
+			"line": 3,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "MSG_PARSE",
+			"line": 17,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "TEST_v_1",
+			"line": 13,
+			"database": "CFBF"
+		}
+	],
+	"timestamp": "2021-07-14T22:45:18.479Z",
+	"process": {
+		"name": "P_1",
+		"number": 5,
+		"ID": 6,
+		"visible": true,
+		"systemID": "123145426214912",
+		"type": 3,
+		"state": 0,
+		"cpuUsage": 0,
+		"cpuTime": 0.00286,
+		"preemptive": false,
+		"sessionID": ""
+	},
+	"user": {
+		"account": "Designer",
+		"alias": ""
+	}
+}
+,
+{
+	"error": -1,
+	"errorLine": 32,
+	"errorMethod": "MSG_PARSE",
+	"errorFormula": "$msg:=JSON Parse($json;Is object)",
+	"stack": [
+		{
+			"code": 554,
+			"component": "xbox",
+			"message": "JSONが正しくありません。\" 0-9 null true false { [が足りません。"
+		},
+		{
+			"code": 550,
+			"component": "xbox",
+			"message": "JSONが正しくありません: ソース  行 1 列 1"
+		}
+	],
+	"callChain": [
+		{
+			"type": "projectMethod",
+			"name": "m_getLastError",
+			"line": 7,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "m_handler",
+			"line": 3,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "MSG_PARSE",
+			"line": 32,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "TEST_v_1",
+			"line": 13,
+			"database": "CFBF"
+		}
+	],
+	"timestamp": "2021-07-14T22:45:18.483Z",
+	"process": {
+		"name": "P_1",
+		"number": 5,
+		"ID": 6,
+		"visible": true,
+		"systemID": "123145426214912",
+		"type": 3,
+		"state": 0,
+		"cpuUsage": 0,
+		"cpuTime": 0.004358,
+		"preemptive": false,
+		"sessionID": ""
+	},
+	"user": {
+		"account": "Designer",
+		"alias": ""
+	}
+}
+,
+{
+	"error": -9949,
+	"errorLine": 17,
+	"errorMethod": "MSG_PARSE",
+	"errorFormula": "CFBF PARSE DATA ($1->;$json;$bytes)",
+	"stack": [
+		{
+			"code": -1,
+			"component": "4DRT",
+			"message": "プラグインメソッドが実行できません。"
+		},
+		{
+			"code": -9949,
+			"component": "4DRT",
+			"message": "ライセンスまたはアクセス権エラー。 (CFBF (3.5.0))"
+		}
+	],
+	"callChain": [
+		{
+			"type": "projectMethod",
+			"name": "m_getLastError",
+			"line": 7,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "m_handler",
+			"line": 3,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "MSG_PARSE",
+			"line": 17,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "TEST_v_1",
+			"line": 13,
+			"database": "CFBF"
+		}
+	],
+	"timestamp": "2021-07-14T22:46:17.254Z",
+	"process": {
+		"name": "P_1",
+		"number": 5,
+		"ID": 13,
+		"visible": true,
+		"systemID": "123145425719296",
+		"type": 3,
+		"state": 0,
+		"cpuUsage": 0,
+		"cpuTime": 0.002349,
+		"preemptive": false,
+		"sessionID": ""
+	},
+	"user": {
+		"account": "Designer",
+		"alias": ""
+	}
+}
+,
+{
+	"error": -1,
+	"errorLine": 32,
+	"errorMethod": "MSG_PARSE",
+	"errorFormula": "$msg:=JSON Parse($json;Is object)",
+	"stack": [
+		{
+			"code": 554,
+			"component": "xbox",
+			"message": "JSONが正しくありません。\" 0-9 null true false { [が足りません。"
+		},
+		{
+			"code": 550,
+			"component": "xbox",
+			"message": "JSONが正しくありません: ソース  行 1 列 1"
+		}
+	],
+	"callChain": [
+		{
+			"type": "projectMethod",
+			"name": "m_getLastError",
+			"line": 7,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "m_handler",
+			"line": 3,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "MSG_PARSE",
+			"line": 32,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "TEST_v_1",
+			"line": 13,
+			"database": "CFBF"
+		}
+	],
+	"timestamp": "2021-07-14T22:46:17.255Z",
+	"process": {
+		"name": "P_1",
+		"number": 5,
+		"ID": 13,
+		"visible": true,
+		"systemID": "123145425719296",
+		"type": 3,
+		"state": 0,
+		"cpuUsage": 0,
+		"cpuTime": 0.003284,
+		"preemptive": false,
+		"sessionID": ""
+	},
+	"user": {
+		"account": "Designer",
+		"alias": ""
+	}
+}
+,
+{
+	"error": -9949,
+	"errorLine": 17,
+	"errorMethod": "MSG_PARSE",
+	"errorFormula": "CFBF PARSE DATA ($1->;$json;$bytes)",
+	"stack": [
+		{
+			"code": -1,
+			"component": "4DRT",
+			"message": "プラグインメソッドが実行できません。"
+		},
+		{
+			"code": -9949,
+			"component": "4DRT",
+			"message": "ライセンスまたはアクセス権エラー。 (CFBF (3.5.0))"
+		}
+	],
+	"callChain": [
+		{
+			"type": "projectMethod",
+			"name": "m_getLastError",
+			"line": 7,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "m_handler",
+			"line": 3,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "MSG_PARSE",
+			"line": 17,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "TEST_v_1",
+			"line": 13,
+			"database": "CFBF"
+		}
+	],
+	"timestamp": "2021-07-14T22:46:59.580Z",
+	"process": {
+		"name": "P_1",
+		"number": 5,
+		"ID": 6,
+		"visible": true,
+		"systemID": "123145613160448",
+		"type": 3,
+		"state": 0,
+		"cpuUsage": 0,
+		"cpuTime": 0.003025,
+		"preemptive": false,
+		"sessionID": ""
+	},
+	"user": {
+		"account": "Designer",
+		"alias": ""
+	}
+}
+,
+{
+	"error": -1,
+	"errorLine": 32,
+	"errorMethod": "MSG_PARSE",
+	"errorFormula": "$msg:=JSON Parse($json;Is object)",
+	"stack": [
+		{
+			"code": 554,
+			"component": "xbox",
+			"message": "JSONが正しくありません。\" 0-9 null true false { [が足りません。"
+		},
+		{
+			"code": 550,
+			"component": "xbox",
+			"message": "JSONが正しくありません: ソース  行 1 列 1"
+		}
+	],
+	"callChain": [
+		{
+			"type": "projectMethod",
+			"name": "m_getLastError",
+			"line": 7,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "m_handler",
+			"line": 3,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "MSG_PARSE",
+			"line": 32,
+			"database": "CFBF"
+		},
+		{
+			"type": "projectMethod",
+			"name": "TEST_v_1",
+			"line": 13,
+			"database": "CFBF"
+		}
+	],
+	"timestamp": "2021-07-14T22:46:59.581Z",
+	"process": {
+		"name": "P_1",
+		"number": 5,
+		"ID": 6,
+		"visible": true,
+		"systemID": "123145613160448",
+		"type": 3,
+		"state": 0,
+		"cpuUsage": 0,
+		"cpuTime": 0.004006,
+		"preemptive": false,
+		"sessionID": ""
+	},
+	"user": {
+		"account": "Designer",
+		"alias": ""
+	}
+}
 ]
