@@ -3,31 +3,11 @@
 [![license](https://img.shields.io/github/license/miyako/4d-plugin-CFBF)](LICENSE)
 ![downloads](https://img.shields.io/github/downloads/miyako/4d-plugin-CFBF/total)
 
+**Note**: for v17 and earlier, move `manifest.json` to `Contents`
+
 # 4d-plugin-CFBF
 
 Parse [Compound File Binary Format](https://en.wikipedia.org/wiki/Compound_File_Binary_Format) file using [libgsf](https://github.com/GNOME/libgsf).
-
-## Remarks
-
-there are 4 different releases, for 4 different tagrets.
-
-* ``maj.min.d.v17``
-
-* ``maj.min.s.v17``
-
-* ``maj.min.d.v18``
-
-* ``maj.min.s.v18``
-
-``maj.min`` is the regular version number, e.g. ``3.1``.
-
-``d`` means dynamic library for Mac, or linkage to ``.dylib`` on Mac. use this for 4D Client/4D Server applications. the plugin will not return valid results after you reopen a database, for instance, if you "restart interpreted", or select an application that uses the plugin again from "open" or "open recent" menu, ``RESTART 4D`` (not in an automatic update context) or ``OPEN DATA FILE``. this is because ``libgsf`` registers static object types (``g_type_register_static`` in ``gsf-impl-utils.h``) at startup. [Once a GTypeModule is initialized, it must exist forever](https://developer.gnome.org/gobject/stable/GTypeModule.html#g-type-module-use). closing a database does not terminate the runtime. you should quit the application (``QUIT 4D`` or ``quit`` standard action).
-
-``s`` means static library, or linkage to ``.a`` on Mac. use this for 4D desktop standalone applications. the above limitation about reopening a database does not apply. using this version on the server may cause it to crash during exit.
-
-``v17`` means the ``manifest.json`` file is directly under ``Contents`` in the bundle package. use this for 4D v17 R6 or earlier. uwhen freshly downloaded from the internet, macOS Calatina 10.15.2 or later may reject as not notarised.
-
-``v18`` means the ``manifest.json`` file is i inside ``Resources`` in the bundle package. use this for 4D v18 LTS or later. earlier versions of 4D may not recognised the plugin. the file location has been changed to better comply with Apple guidelines.
 
 ## About
 
