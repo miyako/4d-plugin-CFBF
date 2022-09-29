@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="9">
+	<com.4d>
+		<deployment>
+			<options/>
+		</deployment>
+		<server>
+			<network>
+				<options publication_name="MSG" use_legacy_network_layer="false"/>
+				<client_server use_encryption="false"/>
+			</network>
+		</server>
+		<database>
+			<misc standard_xpath="false"/>
+			<cache adaptative="false" flush_buffer_delay="20s"/>
+		</database>
+		<compiler>
+			<options fat_binary="true" target="active"/>
+			<typage default_for_button="2" default_for_numeric="1"/>
+		</compiler>
+		<web>
+			<standalone_server>
+				<configuration automatic_session_management="true" port_number="80" session_mode="3"/>
+			</standalone_server>
+			<remote>
+				<configuration automatic_session_management="true" session_mode="3"/>
+			</remote>
+		</web>
+		<sql>
+			<publication port_number="19812"/>
+		</sql>
+		<general allow_user_settings="true"/>
+	</com.4d>
+</preferences>

@@ -1,0 +1,27 @@
+{
+	"(retired)": {
+		"methods": [
+			"(generic_error_handler)"
+		]
+	},
+	"Console": {
+		"methods": [
+			"console",
+			"m_getLastError",
+			"m_handler",
+			"m_log",
+			"m_start",
+			"m_stop"
+		]
+	},
+	"TEST": {
+		"methods": [
+			"TEST_v_1"
+		]
+	},
+	"trash": {
+		"groups": [
+			"(retired)"
+		]
+	}
+}
